@@ -9,7 +9,7 @@ pipeline {
         stage('CI') {
             steps {
                 echo 'Running decomposition locally...'
-                sh 'python CI/decomposition.py requirements.txt'
+                sh 'python3 CI/decomposition.py requirements.txt'
                 // archiveArtifacts artifacts: 'composition_plan.yaml'
             }
         }
